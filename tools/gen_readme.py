@@ -86,6 +86,17 @@ def main() -> None:
         services.append(svc)
 
     lines: List[str] = []
+    lines.append(
+        """
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+"""
+    )
     lines.append("= Discord Alternatives Comparison")
     lines.append("")
     if os.path.isfile(notice_path):
