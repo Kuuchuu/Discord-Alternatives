@@ -1,0 +1,232 @@
+= Discord Alternatives Comparison
+
+[IMPORTANT]
+====
+ACTIVELY BEING UPDATED
+
+This repository is currently under active development.
+
+Unless a service is *not* listed below, please hold off on submitting pull requests.  
+I have already tested and collected criteria status for the following services:
+
+* Fluxer
+* GameVox
+* Matrix (Element)
+* Nerimity
+* Root
+* Sharkord
+* Spacebar (Fermi)
+* Stoat
+* Tailchat
+* TeamSpeak 6
+====
+
+[NOTE]
+====
+✔️ supported · ❌ not supported · ⚠️ partial/conditional · ❔ unclear
+====
+
+== Core Communication
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Text channels | ✔️
+| Voice channels | ✔️
+| Video calls | ✔️
+| Screen sharing | ✔️
+| Threaded conversations | ⚠️footnote:nf6146d719b[In development]
+| Direct messages (1:1) | ✔️
+| Group DMs | ✔️
+| Message editing | ✔️
+| Message deletion | ✔️
+| Message reactions (emoji) | ✔️
+| Custom emoji support | ✔️
+| Custom stickers | ✔️
+| Message pinning | ✔️
+| File uploads | ✔️
+| Max file size >25MB | ⚠️footnote:na6ec942ee6[Requires either subscription or self-hosting.]
+| Inline image previews | ✔️
+| Markdown support | ✔️
+| Code block formatting | ✔️
+| Spoiler tags | ✔️
+| Polls (native) | ❌
+| Scheduled events (native) | ❌
+|===
+
+== Moderation & Admin Controls
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Role-based permissions | ✔️
+| Granular channel permissions | ✔️
+| Moderation logs / audit logs | ✔️
+| User timeout / mute | ✔️
+| IP bans | ❔
+| Word / phrase filters | ❌
+| Auto-moderation (AI or rule-based) | ✔️
+| Slow mode | ✔️
+| Invite link expiration controls | ✔️
+| Two-factor authentication (2FA) for admins | ✔️
+| Verified servers / communities | ❌
+| Anonymous reporting system | ❔
+| User blocking | ✔️
+| Shadow banning capability | ❔
+| Content reporting to platform | ✔️
+|===
+
+== Privacy & Security
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| End-to-end encryption (E2EE) | ⚠️footnote:nc61ebe7fcf[Data between relayed servers will be E2EE. Encrypted Voice chat and secret chats are planned.]
+| Transport encryption (TLS) | ✔️
+| Self-destructing messages | ❌
+| Account 2FA | ✔️
+| Hardware key support (WebAuthn) | ✔️
+| Open source client | ✔️
+| Open source server | ✔️
+| Third-party security audits | ❌
+| Data export (user data download) | ✔️
+| GDPR compliance tools | ✔️
+| Minimal telemetry option | ❌
+| No ads | ⚠️footnote:nbf71264795[Minimal ads for “Plutonium” when not self hosting.]
+| No phone number required | ✔️
+| Pseudonymous accounts allowed | ✔️
+| Private communities (invite-only) | ✔️
+| Hidden member lists option | ❌
+|===
+
+== Federation / Hosting Model
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Self-hostable server | ✔️
+| Federated (ActivityPub, Matrix, etc.) | ⚠️footnote:nf6146d719b[In development]
+| Peer-to-peer option | ❌
+| Official hosted SaaS option | ✔️
+| Multiple community support in one client | ✔️
+| Cross-server messaging | ⚠️footnote:nf6146d719b[In development]
+| Bridge support (Matrix, IRC, Slack, etc.) | ✔️footnote:n84971322c3[Discord (UNTESTED): https://github.com/rillabel/fluxer-discord-bridge]
+| Custom domain support | ⚠️footnote:nd8e5243684[Custom domain only with self-hosted client/server.]
+| White-label branding | ❌
+|===
+
+== Bots & Integrations
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Bot API | ✔️
+| Webhooks | ✔️
+| Slash commands | ✔️
+| OAuth support | ❌
+| App marketplace | ✔️footnote:na17a9cc9eb[https://fluxerservers.com/bots]
+| Custom bots allowed | ✔️
+| Music bots allowed | ✔️
+| Moderation bots supported | ✔️
+| SSO support (SAML/OIDC) | ❌
+| LDAP/AD integration | ❌
+| Zapier/IFTTT support | ❌
+|===
+
+== Platform Support
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Web client | ✔️
+| Windows client | ✔️
+| macOS client | ✔️
+| Linux client | ✔️
+| Android app | ⚠️footnote:nf6146d719b[In development]
+| iOS app | ⚠️footnote:nf6146d719b[In development]
+| Offline message caching | ❌
+| Progressive Web App (PWA) | ✔️
+| Accessibility features (screen reader support) | ✔️
+| Low-bandwidth mode | ❌
+|===
+
+== Community Features
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Public server discovery | ✔️
+| Categories for servers | ✔️
+| Announcement channels | ❌footnote:n9be9e1d317[Can be created using basic text channel and role restrictions.]
+| Forum-style channels | ⚠️footnote:nf6146d719b[In development]
+| Community analytics | ❌
+| Server insights dashboard | ❌
+| Membership screening | ❌
+| Paid subscriptions / memberships | ⚠️footnote:n09b614f857[Paid subscriptions (“Plutonium”) are only available on the official server. No pay-walled features on self-hosted.]
+| Boosting system | ❌
+| Stage / broadcast channels | ❌
+|===
+
+== Voice / Video Specific
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Push-to-talk | ✔️
+| Noise suppression (built-in) | ✔️
+| Background blur | ❌
+| Voice activity detection | ✔️
+| Screen share with audio | ⚠️footnote:n6960c258fc[Currently only supported on limited platforms.]
+| Recording capability | ❌
+| Live streaming to external platforms | ❌
+| Spatial audio | ❌
+| Max call size >25 users | ✔️
+| Persistent voice rooms | ✔️
+|===
+
+== Customization & UX
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Custom themes | ✔️
+| Dark mode | ✔️
+| Custom CSS support | ✔️
+| Plugin support | ❌
+| Keyboard shortcut customization | ✔️
+| Custom notification rules | ✔️
+| Per-channel notification control | ✔️
+| Custom status messages | ✔️
+| Rich presence API | ⚠️footnote:nf6146d719b[In development]
+| Custom avatars per community | ⚠️footnote:n1f290338a9[Requires either subscription or self hosting]
+|===
+
+== Monetization & Creator Tools
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Partner program | ⚠️footnote:n36474ec512[Early / limited, monetization pending. https://fluxer.app/partners]
+| Native paid memberships / subscriptions | ⚠️footnote:n379c85c977[Planned functionality]
+| Revenue sharing model | ⚠️footnote:na6555533d0[Planned functionality, estimated to be between 5-10]
+| Paywalled channels | ⚠️footnote:n379c85c977[Planned functionality]
+| Tipping / donations built-in | ❔
+| Digital goods sales (stickers, roles, perks) | ⚠️footnote:n379c85c977[Planned functionality]
+|===
+
+== Business / Governance
+
+[cols="2*", options="header"]
+|===
+| Criteria | Fluxer
+| Non-profit governance | ❌
+| Corporate-owned | ❌
+| Clear monetization model | ✔️
+| Enterprise SLA | ❌
+| Priority support tier | ❌
+| Dedicated hosting option | ❌
+| Community moderation model | ❌
+| Transparent roadmap | ✔️
+| Public issue tracker | ✔️
+| Venture capital funded | ❌
+|===
