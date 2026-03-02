@@ -34,12 +34,15 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          if git diff --quiet -- README.adoc; then
+          # Stage README if present/changed (including untracked)
+          if [ -z "$(git status --porcelain -- README.adoc)" ]; then
             echo "README.adoc unchanged"
             exit 0
           fi
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add README.adoc
           git commit -m "chore: auto-generate README.adoc"
           git push
