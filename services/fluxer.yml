@@ -295,7 +295,7 @@ criteria:
   monet.revenue_sharing_model:
     status: partial
     notes:
-      - "Planned functionality, estimated to be between 5-10"
+      - "Planned functionality, estimated to be between 5-10%"
     source: https://fluxer.app/partners
   monet.paywalled_channels:
     status: partial
