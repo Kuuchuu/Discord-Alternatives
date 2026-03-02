@@ -1,0 +1,291 @@
+id: example
+name: example
+
+# Optional metadata
+links:
+  homepage: https://example.org
+  docs: https://example.org/docs
+  source: https://git.example.org/example/example
+
+criteria:
+  # Core Communication
+  core.text_channels:
+    status: supported
+    notes:
+      - "Footnote"
+    sources:
+      - "https://example.org/text_feature" # optional, traceability
+  core.voice_channels:
+    status: unsupported
+  core.video_calls:
+    status: yes
+  core.screen_sharing:
+    status: no
+  core.threaded_conversations:
+    status: partial
+  core.direct_messages:
+    status: unknown
+  core.group_dms:
+    status:
+  core.message_editing:
+    status:
+  core.message_deletion:
+    status:
+  core.message_reactions:
+    status:
+  core.custom_emoji:
+    status:
+  core.custom_stickers:
+    status:
+  core.message_pinning:
+    status:
+  core.file_uploads:
+    status:
+  core.max_upload_size_gt_25mb:
+    status:
+  core.inline_image_previews:
+    status:
+  core.markdown_support:
+    status:
+  core.code_block_formatting:
+    status:
+  core.spoiler_tags:
+    status:
+  core.polls:
+    status:
+  core.scheduled_events:
+    status:
+
+  # Moderation & Admin Controls
+  mod.role_based_permissions:
+    status:
+  mod.granular_channel_permissions:
+    status:
+  mod.moderation_logs_audit_logs:
+    status:
+  mod.user_timeout_mute:
+    status:
+  mod.ip_bans:
+    status:
+  mod.word_phrase_filters:
+    status:
+  mod.auto_moderation:
+    status:
+  mod.slow_mode:
+    status:
+  mod.invite_link_expiration_controls:
+    status:
+  mod.admin_2fa:
+    status:
+  mod.verified_communities:
+    status:
+  mod.anonymous_reporting_system:
+    status:
+  mod.user_blocking:
+    status:
+  mod.shadow_banning:
+    status:
+  mod.content_reporting_to_platform:
+    status:
+
+  # Privacy & Security
+  sec.end_to_end_encryption:
+    status:
+  sec.transport_encryption_tls:
+    status:
+  sec.self_destructing_messages:
+    status:
+  sec.account_2fa:
+    status:
+  sec.hardware_key_webauthn:
+    status:
+  sec.open_source_client:
+    status:
+  sec.open_source_server:
+    status:
+  sec.third_party_security_audits:
+    status:
+  sec.data_export:
+    status:
+  sec.gdpr_compliance_tools:
+    status:
+  sec.minimal_telemetry_option:
+    status:
+  sec.no_ads:
+    status:
+  sec.no_phone_number_required:
+    status:
+  sec.pseudonymous_accounts_allowed:
+    status:
+  sec.private_communities:
+    status:
+  sec.hidden_member_lists_option:
+    status:
+
+  # Federation / Hosting Model
+  host.self_hostable_server:
+    status:
+  host.federated:
+    status:
+  host.peer_to_peer_option:
+    status:
+  host.official_hosted_saas_option:
+    status:
+  host.multi_community_one_client:
+    status:
+  host.cross_server_messaging:
+    status:
+  host.bridge_support:
+    status:
+  host.custom_domain_support:
+    status:
+  host.white_label_branding:
+    status:
+
+  # Bots & Integrations
+  integ.bot_api:
+    status:
+  integ.webhooks:
+    status:
+  integ.slash_commands:
+    status:
+  integ.oauth_support:
+    status:
+  integ.app_marketplace:
+    status:
+  integ.custom_bots_allowed:
+    status:
+  integ.music_bots_allowed:
+    status:
+  integ.moderation_bots_supported:
+    status:
+  integ.sso_saml_oidc:
+    status:
+  integ.ldap_ad_integration:
+    status:
+  integ.zapier_ifttt_support:
+    status:
+
+  # Platform Support
+  platform.web_client:
+    status:
+  platform.windows_client:
+    status:
+  platform.macos_client:
+    status:
+  platform.linux_client:
+    status:
+  platform.android_app:
+    status:
+  platform.ios_app:
+    status:
+  platform.offline_message_caching:
+    status:
+  platform.progressive_web_app:
+    status:
+  platform.accessibility_screen_reader_support:
+    status:
+  platform.low_bandwidth_mode:
+    status:
+
+  # Community Features
+  community.public_server_discovery:
+    status:
+  community.server_categories:
+    status:
+  community.announcement_channels:
+    status:
+  community.forum_style_channels:
+    status:
+  community.community_analytics:
+    status:
+  community.server_insights_dashboard:
+    status:
+  community.membership_screening:
+    status:
+  community.paid_subscriptions_memberships:
+    status:
+  community.boosting_system:
+    status:
+  community.stage_broadcast_channels:
+    status:
+
+  # Voice / Video Specific
+  av.push_to_talk:
+    status:
+  av.noise_suppression_built_in:
+    status:
+  av.background_blur:
+    status:
+  av.voice_activity_detection:
+    status:
+  av.screen_share_with_audio:
+    status:
+  av.recording_capability:
+    status:
+  av.live_streaming_to_external_platforms:
+    status:
+  av.spatial_audio:
+    status:
+  av.max_call_size_gt_25:
+    status:
+  av.persistent_voice_rooms:
+    status:
+
+  # Customization & UX
+  ux.custom_themes:
+    status:
+  ux.dark_mode:
+    status:
+  ux.custom_css_support:
+    status:
+  ux.plugin_support:
+    status:
+  ux.keyboard_shortcut_customization:
+    status:
+  ux.custom_notification_rules:
+    status:
+  ux.per_channel_notification_control:
+    status:
+  ux.custom_status_messages:
+    status:
+  ux.rich_presence_api:
+    status:
+  ux.custom_avatars_per_community:
+    status:
+
+  # Monetization & Creator Tools
+  monet.partner_program:
+    status:
+  monet.native_paid_membership_subscriptions:
+    status:
+  monet.revenue_sharing_model:
+    status:
+  monet.paywalled_channels:
+    status:
+  monet.tipping_donations_built_in:
+    status:
+  monet.digital_goods_sales:
+    status:
+
+  # Business / Governance
+  biz.non_profit_governance:
+    status:
+  biz.corporate_owned:
+    status:
+  biz.clear_monetization_model:
+    status:
+  biz.enterprise_sla:
+    status:
+  biz.priority_support_tier:
+    status:
+  biz.dedicated_hosting_option:
+    status:
+  biz.community_moderation_model:
+    status:
+  biz.transparent_roadmap:
+    status:
+  biz.public_issue_tracker:
+    status:
+  biz.venture_capital_funded:
+    status:

@@ -1,0 +1,331 @@
+id: fluxer
+name: Fluxer
+
+links:
+  homepage: https://fluxer.app
+  docs: https://docs.fluxer.app
+  source: https://github.com/fluxerapp/fluxer
+
+criteria:
+  # Core Communication
+  core.text_channels:
+    status: supported
+  core.voice_channels:
+    status: supported
+  core.video_calls:
+    status: supported
+  core.screen_sharing:
+    status: supported
+  core.threaded_conversations:
+    status: partial
+    notes:
+      - "In development"
+  core.direct_messages:
+    status: supported
+  core.group_dms:
+    status: supported
+  core.message_editing:
+    status: supported
+  core.message_deletion:
+    status: supported
+  core.message_reactions:
+    status: supported
+  core.custom_emoji:
+    status: supported
+  core.custom_stickers:
+    status: supported
+  core.message_pinning:
+    status: supported
+  core.file_uploads:
+    status: supported
+  core.max_upload_size_gt_25mb:
+    status: partial
+    notes:
+      - "Requires either subscription or self-hosting."
+  core.inline_image_previews:
+    status: supported
+  core.markdown_support:
+    status: supported
+  core.code_block_formatting:
+    status: supported
+  core.spoiler_tags:
+    status: supported
+  core.polls:
+    status: unsupported
+  core.scheduled_events:
+    status: unsupported
+
+  # Moderation & Admin Controls
+  mod.role_based_permissions:
+    status: supported
+  mod.granular_channel_permissions:
+    status: supported
+  mod.moderation_logs_audit_logs:
+    status: supported
+  mod.user_timeout_mute:
+    status: supported
+  mod.ip_bans:
+    status: unknown
+  mod.word_phrase_filters:
+    status: unsupported
+  mod.auto_moderation:
+    status: supported
+  mod.slow_mode:
+    status: supported
+  mod.invite_link_expiration_controls:
+    status: supported
+  mod.admin_2fa:
+    status: supported
+  mod.verified_communities:
+    status: no
+  mod.anonymous_reporting_system:
+    status: unknown
+  mod.user_blocking:
+    status: supported
+  mod.shadow_banning:
+    status: unknown
+  mod.content_reporting_to_platform:
+    status: yes
+
+  # Privacy & Security
+  sec.end_to_end_encryption:
+    status: partial
+    notes:
+      - "Data between relayed servers will be E2EE. Encrypted Voice chat and secret chats are planned."
+  sec.transport_encryption_tls:
+    status: yes
+  sec.self_destructing_messages:
+    status: unsupported
+  sec.account_2fa:
+    status: supported
+  sec.hardware_key_webauthn:
+    status: supported
+  sec.open_source_client:
+    status: supported
+  sec.open_source_server:
+    status: supported
+  sec.third_party_security_audits:
+    status: no
+  sec.data_export:
+    status: supported
+  sec.gdpr_compliance_tools:
+    status: supported
+  sec.minimal_telemetry_option:
+    status: no
+  sec.no_ads:
+    status: partial
+    notes:
+      - "Minimal ads for “Plutonium” when not self hosting."
+  sec.no_phone_number_required:
+    status: yes
+  sec.pseudonymous_accounts_allowed:
+    status: yes
+  sec.private_communities:
+    status: supported
+  sec.hidden_member_lists_option:
+    status: no
+
+  # Federation / Hosting Model
+  host.self_hostable_server:
+    status: supported
+  host.federated:
+    status: partial
+    notes:
+      - "In development"
+  host.peer_to_peer_option:
+    status: unsupported
+  host.official_hosted_saas_option:
+    status: yes
+  host.multi_community_one_client:
+    status: supported
+  host.cross_server_messaging:
+    status: partial
+    notes:
+      - "In development"
+  host.bridge_support:
+    status: yes
+    notes:
+      - "Discord (UNTESTED): https://github.com/rillabel/fluxer-discord-bridge"
+  host.custom_domain_support:
+    status: partial
+    notes:
+      - "Custom domain only with self-hosted client/server."
+  host.white_label_branding:
+    status: no
+
+  # Bots & Integrations
+  integ.bot_api:
+    status: yes
+  integ.webhooks:
+    status: supported
+  integ.slash_commands:
+    status: supported
+  integ.oauth_support:
+    status: unsupported
+  integ.app_marketplace:
+    status: yes
+    notes:
+      - "https://fluxerservers.com/bots"
+  integ.custom_bots_allowed:
+    status: yes
+  integ.music_bots_allowed:
+    status: yes
+  integ.moderation_bots_supported:
+    status: yes
+  integ.sso_saml_oidc:
+    status: unsupported
+  integ.ldap_ad_integration:
+    status: unsupported
+  integ.zapier_ifttt_support:
+    status: unsupported
+
+  # Platform Support
+  platform.web_client:
+    status: yes
+  platform.windows_client:
+    status: yes
+  platform.macos_client:
+    status: yes
+  platform.linux_client:
+    status: yes
+  platform.android_app:
+    status: partial
+    notes:
+      - "In development"
+  platform.ios_app:
+    status: partial
+    notes:
+      - "In development"
+  platform.offline_message_caching:
+    status: unsupported
+  platform.progressive_web_app:
+    status: yes
+  platform.accessibility_screen_reader_support:
+    status: supported
+  platform.low_bandwidth_mode:
+    status: no
+
+  # Community Features
+  community.public_server_discovery:
+    status: yes
+  community.server_categories:
+    status: yes
+  community.announcement_channels:
+    status: no
+    notes:
+      - "Can be created using basic text channel and role restrictions."
+  community.forum_style_channels:
+    status: partial
+    notes:
+      - "In development"
+  community.community_analytics:
+    status: no
+  community.server_insights_dashboard:
+    status: no
+  community.membership_screening:
+    status: no
+  community.paid_subscriptions_memberships:
+    status: partial
+    notes:
+      - "Paid subscriptions (“Plutonium”) are only available on the official server. No pay-walled features on self-hosted."
+  community.boosting_system:
+    status: no
+  community.stage_broadcast_channels:
+    status: unsupported
+
+  # Voice / Video Specific
+  av.push_to_talk:
+    status: supported
+  av.noise_suppression_built_in:
+    status: supported
+  av.background_blur:
+    status: unsupported
+  av.voice_activity_detection:
+    status: supported
+  av.screen_share_with_audio:
+    status: partial
+    notes:
+      - "Currently only supported on limited platforms."
+  av.recording_capability:
+    status: unsupported
+  av.live_streaming_to_external_platforms:
+    status: unsupported
+  av.spatial_audio:
+    status: unsupported
+  av.max_call_size_gt_25:
+    status: supported
+  av.persistent_voice_rooms:
+    status: yes
+
+  # Customization & UX
+  ux.custom_themes:
+    status: supported
+  ux.dark_mode:
+    status: supported
+  ux.custom_css_support:
+    status: supported
+  ux.plugin_support:
+    status: unsupported
+  ux.keyboard_shortcut_customization:
+    status: supported
+  ux.custom_notification_rules:
+    status: supported
+  ux.per_channel_notification_control:
+    status: supported
+  ux.custom_status_messages:
+    status: supported
+  ux.rich_presence_api:
+    status: partial
+    notes:
+      - "In development"
+  ux.custom_avatars_per_community:
+    status: partial
+    notes:
+      - "Requires either subscription or self hosting"
+
+  # Monetization & Creator Tools
+  monet.partner_program:
+    status: partial
+    notes:
+      - "Early / limited, monetization pending. https://fluxer.app/partners"
+  monet.native_paid_membership_subscriptions:
+    status: partial
+    notes:
+      - "Planned functionality"
+  monet.revenue_sharing_model:
+    status: partial
+    notes:
+      - "Planned functionality, estimated to be between 5-10"
+    source: https://fluxer.app/partners
+  monet.paywalled_channels:
+    status: partial
+    notes:
+      - "Planned functionality"
+  monet.tipping_donations_built_in:
+    status: unknown
+  monet.digital_goods_sales:
+    status: partial
+    notes:
+      - "Planned functionality"
+
+  # Business / Governance
+  biz.non_profit_governance:
+    status: no
+  biz.corporate_owned:
+    status: no
+  biz.clear_monetization_model:
+    status: yes
+  biz.enterprise_sla:
+    status: no
+  biz.priority_support_tier:
+    status: no
+  biz.dedicated_hosting_option:
+    status: no
+  biz.community_moderation_model:
+    status: no
+  biz.transparent_roadmap:
+    status: yes
+  biz.public_issue_tracker:
+    status: yes
+  biz.venture_capital_funded:
+    status: no

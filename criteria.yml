@@ -1,0 +1,300 @@
+sections:
+  - id: core
+    title: Core Communication
+    criteria:
+      - id: core.text_channels
+        label: Text channels
+      - id: core.voice_channels
+        label: Voice channels
+      - id: core.video_calls
+        label: Video calls
+      - id: core.screen_sharing
+        label: Screen sharing
+      - id: core.threaded_conversations
+        label: Threaded conversations
+      - id: core.direct_messages
+        label: Direct messages (1:1)
+      - id: core.group_dms
+        label: Group DMs
+      - id: core.message_editing
+        label: Message editing
+      - id: core.message_deletion
+        label: Message deletion
+      - id: core.message_reactions
+        label: Message reactions (emoji)
+      - id: core.custom_emoji
+        label: Custom emoji support
+      - id: core.custom_stickers
+        label: Custom stickers
+      - id: core.message_pinning
+        label: Message pinning
+      - id: core.file_uploads
+        label: File uploads
+      - id: core.max_upload_size_gt_25mb
+        label: Max file size >25MB
+      - id: core.inline_image_previews
+        label: Inline image previews
+      - id: core.markdown_support
+        label: Markdown support
+      - id: core.code_block_formatting
+        label: Code block formatting
+      - id: core.spoiler_tags
+        label: Spoiler tags
+      - id: core.polls
+        label: Polls (native)
+      - id: core.scheduled_events
+        label: Scheduled events (native)
+
+  - id: moderation
+    title: Moderation & Admin Controls
+    criteria:
+      - id: mod.role_based_permissions
+        label: Role-based permissions
+      - id: mod.granular_channel_permissions
+        label: Granular channel permissions
+      - id: mod.moderation_logs_audit_logs
+        label: Moderation logs / audit logs
+      - id: mod.user_timeout_mute
+        label: User timeout / mute
+      - id: mod.ip_bans
+        label: IP bans
+      - id: mod.word_phrase_filters
+        label: Word / phrase filters
+      - id: mod.auto_moderation
+        label: Auto-moderation (AI or rule-based)
+      - id: mod.slow_mode
+        label: Slow mode
+      - id: mod.invite_link_expiration_controls
+        label: Invite link expiration controls
+      - id: mod.admin_2fa
+        label: Two-factor authentication (2FA) for admins
+      - id: mod.verified_communities
+        label: Verified servers / communities
+      - id: mod.anonymous_reporting_system
+        label: Anonymous reporting system
+      - id: mod.user_blocking
+        label: User blocking
+      - id: mod.shadow_banning
+        label: Shadow banning capability
+      - id: mod.content_reporting_to_platform
+        label: Content reporting to platform
+
+  - id: privacy_security
+    title: Privacy & Security
+    criteria:
+      - id: sec.end_to_end_encryption
+        label: End-to-end encryption (E2EE)
+      - id: sec.transport_encryption_tls
+        label: Transport encryption (TLS)
+      - id: sec.self_destructing_messages
+        label: Self-destructing messages
+      - id: sec.account_2fa
+        label: Account 2FA
+      - id: sec.hardware_key_webauthn
+        label: Hardware key support (WebAuthn)
+      - id: sec.open_source_client
+        label: Open source client
+      - id: sec.open_source_server
+        label: Open source server
+      - id: sec.third_party_security_audits
+        label: Third-party security audits
+      - id: sec.data_export
+        label: Data export (user data download)
+      - id: sec.gdpr_compliance_tools
+        label: GDPR compliance tools
+      - id: sec.minimal_telemetry_option
+        label: Minimal telemetry option
+      - id: sec.no_ads
+        label: No ads
+      - id: sec.no_phone_number_required
+        label: No phone number required
+      - id: sec.pseudonymous_accounts_allowed
+        label: Pseudonymous accounts allowed
+      - id: sec.private_communities
+        label: Private communities (invite-only)
+      - id: sec.hidden_member_lists_option
+        label: Hidden member lists option
+
+  - id: federation_hosting
+    title: Federation / Hosting Model
+    criteria:
+      - id: host.self_hostable_server
+        label: Self-hostable server
+      - id: host.federated
+        label: Federated (ActivityPub, Matrix, etc.)
+      - id: host.peer_to_peer_option
+        label: Peer-to-peer option
+      - id: host.official_hosted_saas_option
+        label: Official hosted SaaS option
+      - id: host.multi_community_one_client
+        label: Multiple community support in one client
+      - id: host.cross_server_messaging
+        label: Cross-server messaging
+      - id: host.bridge_support
+        label: Bridge support (Matrix, IRC, Slack, etc.)
+      - id: host.custom_domain_support
+        label: Custom domain support
+      - id: host.white_label_branding
+        label: White-label branding
+
+  - id: bots_integrations
+    title: Bots & Integrations
+    criteria:
+      - id: integ.bot_api
+        label: Bot API
+      - id: integ.webhooks
+        label: Webhooks
+      - id: integ.slash_commands
+        label: Slash commands
+      - id: integ.oauth_support
+        label: OAuth support
+      - id: integ.app_marketplace
+        label: App marketplace
+      - id: integ.custom_bots_allowed
+        label: Custom bots allowed
+      - id: integ.music_bots_allowed
+        label: Music bots allowed
+      - id: integ.moderation_bots_supported
+        label: Moderation bots supported
+      - id: integ.sso_saml_oidc
+        label: SSO support (SAML/OIDC)
+      - id: integ.ldap_ad_integration
+        label: LDAP/AD integration
+      - id: integ.zapier_ifttt_support
+        label: Zapier/IFTTT support
+
+  - id: platform_support
+    title: Platform Support
+    criteria:
+      - id: platform.web_client
+        label: Web client
+      - id: platform.windows_client
+        label: Windows client
+      - id: platform.macos_client
+        label: macOS client
+      - id: platform.linux_client
+        label: Linux client
+      - id: platform.android_app
+        label: Android app
+      - id: platform.ios_app
+        label: iOS app
+      - id: platform.offline_message_caching
+        label: Offline message caching
+      - id: platform.progressive_web_app
+        label: Progressive Web App (PWA)
+      - id: platform.accessibility_screen_reader_support
+        label: Accessibility features (screen reader support)
+      - id: platform.low_bandwidth_mode
+        label: Low-bandwidth mode
+
+  - id: community_features
+    title: Community Features
+    criteria:
+      - id: community.public_server_discovery
+        label: Public server discovery
+      - id: community.server_categories
+        label: Categories for servers
+      - id: community.announcement_channels
+        label: Announcement channels
+      - id: community.forum_style_channels
+        label: Forum-style channels
+      - id: community.community_analytics
+        label: Community analytics
+      - id: community.server_insights_dashboard
+        label: Server insights dashboard
+      - id: community.membership_screening
+        label: Membership screening
+      - id: community.paid_subscriptions_memberships
+        label: Paid subscriptions / memberships
+      - id: community.boosting_system
+        label: Boosting system
+      - id: community.stage_broadcast_channels
+        label: Stage / broadcast channels
+
+  - id: voice_video
+    title: Voice / Video Specific
+    criteria:
+      - id: av.push_to_talk
+        label: Push-to-talk
+      - id: av.noise_suppression_built_in
+        label: Noise suppression (built-in)
+      - id: av.background_blur
+        label: Background blur
+      - id: av.voice_activity_detection
+        label: Voice activity detection
+      - id: av.screen_share_with_audio
+        label: Screen share with audio
+      - id: av.recording_capability
+        label: Recording capability
+      - id: av.live_streaming_to_external_platforms
+        label: Live streaming to external platforms
+      - id: av.spatial_audio
+        label: Spatial audio
+      - id: av.max_call_size_gt_25
+        label: Max call size >25 users
+      - id: av.persistent_voice_rooms
+        label: Persistent voice rooms
+
+  - id: customization_ux
+    title: Customization & UX
+    criteria:
+      - id: ux.custom_themes
+        label: Custom themes
+      - id: ux.dark_mode
+        label: Dark mode
+      - id: ux.custom_css_support
+        label: Custom CSS support
+      - id: ux.plugin_support
+        label: Plugin support
+      - id: ux.keyboard_shortcut_customization
+        label: Keyboard shortcut customization
+      - id: ux.custom_notification_rules
+        label: Custom notification rules
+      - id: ux.per_channel_notification_control
+        label: Per-channel notification control
+      - id: ux.custom_status_messages
+        label: Custom status messages
+      - id: ux.rich_presence_api
+        label: Rich presence API
+      - id: ux.custom_avatars_per_community
+        label: Custom avatars per community
+
+  - id: monetization_creator_tools
+    title: Monetization & Creator Tools
+    criteria:
+      - id: monet.partner_program
+        label: Partner program
+      - id: monet.native_paid_membership_subscriptions
+        label: Native paid memberships / subscriptions
+      - id: monet.revenue_sharing_model
+        label: Revenue sharing model
+      - id: monet.paywalled_channels
+        label: Paywalled channels
+      - id: monet.tipping_donations_built_in
+        label: Tipping / donations built-in
+      - id: monet.digital_goods_sales
+        label: Digital goods sales (stickers, roles, perks)
+
+  - id: business_governance
+    title: Business / Governance
+    criteria:
+      - id: biz.non_profit_governance
+        label: Non-profit governance
+      - id: biz.corporate_owned
+        label: Corporate-owned
+      - id: biz.clear_monetization_model
+        label: Clear monetization model
+      - id: biz.enterprise_sla
+        label: Enterprise SLA
+      - id: biz.priority_support_tier
+        label: Priority support tier
+      - id: biz.dedicated_hosting_option
+        label: Dedicated hosting option
+      - id: biz.community_moderation_model
+        label: Community moderation model
+      - id: biz.transparent_roadmap
+        label: Transparent roadmap
+      - id: biz.public_issue_tracker
+        label: Public issue tracker
+      - id: biz.venture_capital_funded
+        label: Venture capital funded
