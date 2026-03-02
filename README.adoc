@@ -217,7 +217,7 @@ I have already tested and collected criteria status for the following services:
 | Criteria | Fluxer
 | Partner program | ⚠️footnote:n36474ec512[Early / limited, monetization pending. https://fluxer.app/partners]
 | Native paid memberships / subscriptions | ⚠️footnote:n379c85c977[Planned functionality]
-| Revenue sharing model | ⚠️footnote:na6555533d0[Planned functionality, estimated to be between 5-10]
+| Revenue sharing model | ⚠️footnote:n9494632a56[Planned functionality, estimated to be between 5-10%]
 | Paywalled channels | ⚠️footnote:n379c85c977[Planned functionality]
 | Tipping / donations built-in | ❔
 | Digital goods sales (stickers, roles, perks) | ⚠️footnote:n379c85c977[Planned functionality]
