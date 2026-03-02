@@ -14,7 +14,7 @@ criteria:
     notes:
       - "Footnote"
     sources:
-      - "https://example.org/text_feature" # optional, traceability
+      - "https://example.org/text_feature" # optional, appreciated for traceability
   core.voice_channels:
     status: unsupported
   core.video_calls:
