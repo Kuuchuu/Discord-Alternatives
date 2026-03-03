@@ -19,7 +19,7 @@ criteria:
   core.threaded_conversations:
     status: partial
     notes:
-      - "In development"
+      - "In development."
   core.direct_messages:
     status: supported
   core.group_dms:
@@ -131,7 +131,7 @@ criteria:
   host.federated:
     status: partial
     notes:
-      - "In development"
+      - "In development."
   host.peer_to_peer_option:
     status: unsupported
   host.official_hosted_saas_option:
@@ -141,7 +141,7 @@ criteria:
   host.cross_server_messaging:
     status: partial
     notes:
-      - "In development"
+      - "In development."
   host.bridge_support:
     status: yes
     notes:
@@ -191,11 +191,11 @@ criteria:
   platform.android_app:
     status: partial
     notes:
-      - "In development"
+      - "In development."
   platform.ios_app:
     status: partial
     notes:
-      - "In development"
+      - "In development."
   platform.offline_message_caching:
     status: unsupported
   platform.progressive_web_app:
@@ -217,7 +217,7 @@ criteria:
   community.forum_style_channels:
     status: partial
     notes:
-      - "In development"
+      - "In development."
   community.community_analytics:
     status: no
   community.server_insights_dashboard:
@@ -277,11 +277,11 @@ criteria:
   ux.rich_presence_api:
     status: partial
     notes:
-      - "In development"
+      - "In development."
   ux.custom_avatars_per_community:
     status: partial
     notes:
-      - "Requires either subscription or self hosting"
+      - "Requires either subscription or self hosting."
 
   # Monetization & Creator Tools
   monet.partner_program:
@@ -291,22 +291,22 @@ criteria:
   monet.native_paid_membership_subscriptions:
     status: partial
     notes:
-      - "Planned functionality"
+      - "Planned functionality."
   monet.revenue_sharing_model:
     status: partial
     notes:
-      - "Planned functionality, estimated to be between 5-10%"
+      - "Planned functionality, estimated to be between 5-10%."
     source: https://fluxer.app/partners
   monet.paywalled_channels:
     status: partial
     notes:
-      - "Planned functionality"
+      - "Planned functionality."
   monet.tipping_donations_built_in:
     status: unknown
   monet.digital_goods_sales:
     status: partial
     notes:
-      - "Planned functionality"
+      - "Planned functionality."
 
   # Business / Governance
   biz.non_profit_governance:
