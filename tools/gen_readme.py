@@ -51,7 +51,7 @@ def render_cell(value: Dict[str, Any] | None) -> str:
         fid = footnote_id(t)
         fns.append(f"footnote:{fid}[{t}]")
 
-    return emoji + ("" if not fns else "".join(fns))
+    return emoji + ("".join(fns) if fns else "")
 
 
 def main() -> None:
@@ -85,8 +85,7 @@ def main() -> None:
         svc["__path"] = sp
         services.append(svc)
 
-    lines: List[str] = []
-    lines.append(
+    lines: List[str] = [
         """
 ifdef::env-github[]
 :tip-caption: :bulb:
@@ -95,25 +94,24 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 endif::[]
-"""
-    )
-    lines.append("= Discord Alternatives Comparison")
-    lines.append("")
+""",
+        "= Discord Alternatives Comparison",
+        "",
+    ]
     if os.path.isfile(notice_path):
         with open(notice_path, "r", encoding="utf-8") as nf:
             notice_text = nf.read().rstrip()
         if notice_text:
-            lines.append("[IMPORTANT]")
-            lines.append("====")
-            lines.append(notice_text)
-            lines.append("====")
-            lines.append("")
-    lines.append("[NOTE]")
-    lines.append("====")
-    lines.append("✔️ supported · ❌ not supported · ⚠️ partial/conditional · ❔ unclear")
-    lines.append("====")
-    lines.append("")
-
+            lines.extend(("[IMPORTANT]", "====", notice_text, "====", ""))
+    lines.extend(
+        (
+            "[NOTE]",
+            "====",
+            "✔️ supported · ❌ not supported · ⚠️ partial/conditional · ❔ unclear",
+            "====",
+            "",
+        )
+    )
     for sec in sections:
         sec_title = sec.get("title", "").strip()
         sec_id = sec.get("id", "").strip()
@@ -121,12 +119,9 @@ endif::[]
         if not sec_title or not sec_id or not crit_list:
             continue
 
-        lines.append(f"== {sec_title}")
-        lines.append("")
+        lines.extend((f"== {sec_title}", ""))
         cols = 1 + len(services)
-        lines.append(f'[cols="{cols}*", options="header"]')
-        lines.append("|===")
-
+        lines.extend((f'[cols="{cols}*", options="header"]', "|==="))
         header_cells = ["Criteria"] + [s["name"] for s in services]
         lines.append("| " + " | ".join(header_cells))
 
@@ -143,9 +138,7 @@ endif::[]
                 row.append(render_cell(cell_val))
             lines.append("| " + " | ".join(row))
 
-        lines.append("|===")
-        lines.append("")
-
+        lines.extend(("|===", ""))
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines).rstrip() + "\n")
 
