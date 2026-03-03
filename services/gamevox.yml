@@ -1,0 +1,314 @@
+id: gamevox
+name: GameVox
+
+links:
+  homepage: https://www.gamevox.com
+
+criteria:
+  # Core Communication
+  core.text_channels:
+    status: supported
+  core.voice_channels:
+    status: supported
+  core.video_calls:
+    status: unsupported
+  core.screen_sharing:
+    status: supported
+  core.threaded_conversations:
+    status: unsupported
+  core.direct_messages:
+    status: supported
+  core.group_dms:
+    status: unsupported
+  core.message_editing:
+    status: supported
+  core.message_deletion:
+    status: supported
+  core.message_reactions:
+    status: supported
+  core.custom_emoji:
+    status: partial
+    notes:
+      - "Requires server subscription."
+  core.custom_stickers:
+    status: unsupported
+  core.message_pinning:
+    status: supported
+  core.file_uploads:
+    status: supported
+  core.max_upload_size_gt_25mb:
+    status: supported
+  core.inline_image_previews:
+    status: supported
+  core.markdown_support:
+    status: partial
+    notes:
+      - "Partial support."
+  core.code_block_formatting:
+    status: supported
+  core.spoiler_tags:
+    status: unsupported
+  core.polls:
+    status: supported
+  core.scheduled_events:
+    status: unsupported
+
+  # Moderation & Admin Controls
+  mod.role_based_permissions:
+    status: supported
+  mod.granular_channel_permissions:
+    status: supported
+  mod.moderation_logs_audit_logs:
+    status: unsupported
+  mod.user_timeout_mute:
+    status: supported
+  mod.ip_bans:
+    status: supported
+  mod.word_phrase_filters:
+    status: unsupported
+  mod.auto_moderation:
+    status: partial
+    notes:
+      - "Raid protection requires Gold+ subscription."
+  mod.slow_mode:
+    status: unsupported
+  mod.invite_link_expiration_controls:
+    status: unsupported
+  mod.admin_2fa:
+    status: unsupported
+  mod.verified_communities:
+    status: unsupported
+  mod.anonymous_reporting_system:
+    status: unsupported
+  mod.user_blocking:
+    status: supported
+  mod.shadow_banning:
+    status: unsupported
+  mod.content_reporting_to_platform:
+    status: unsupported
+
+  # Privacy & Security
+  sec.end_to_end_encryption:
+    status: unsupported
+  sec.transport_encryption_tls:
+    status: supported
+  sec.self_destructing_messages:
+    status: unsupported
+  sec.account_2fa:
+    status: unsupported
+  sec.hardware_key_webauthn:
+    status: unsupported
+  sec.open_source_client:
+    status: unsupported
+  sec.open_source_server:
+    status: unsupported
+  sec.third_party_security_audits:
+    status: unsupported
+  sec.data_export:
+    status: unsupported
+  sec.gdpr_compliance_tools:
+    status: unsupported
+  sec.minimal_telemetry_option:
+    status: unsupported
+  sec.no_ads:
+    status: partial
+    notes:
+      - "Minimal ads for subscription."
+  sec.no_phone_number_required:
+    status: supported
+  sec.pseudonymous_accounts_allowed:
+    status: supported
+  sec.private_communities:
+    status: supported
+  sec.hidden_member_lists_option:
+    status: unsupported
+
+  # Federation / Hosting Model
+  host.self_hostable_server:
+    status: partial
+    notes:
+      - "In development."
+  host.federated:
+    status: unsupported
+  host.peer_to_peer_option:
+    status: unsupported
+  host.official_hosted_saas_option:
+    status: supported
+  host.multi_community_one_client:
+    status: supported
+  host.cross_server_messaging:
+    status: unsupported
+  host.bridge_support:
+    status: unsupported
+  host.custom_domain_support:
+    status: unsupported
+  host.white_label_branding:
+    status: unsupported
+
+  # Bots & Integrations
+  integ.bot_api:
+    status: unsupported
+  integ.webhooks:
+    status: unsupported
+  integ.slash_commands:
+    status: unsupported
+  integ.oauth_support:
+    status: unsupported
+  integ.app_marketplace:
+    status: unsupported
+  integ.custom_bots_allowed:
+    status: unsupported
+  integ.music_bots_allowed:
+    status: unsupported
+  integ.moderation_bots_supported:
+    status: unsupported
+  integ.sso_saml_oidc:
+    status: unsupported
+  integ.ldap_ad_integration:
+    status: unsupported
+  integ.zapier_ifttt_support:
+    status: unsupported
+
+  # Platform Support
+  platform.web_client:
+    status: supported
+  platform.windows_client:
+    status: supported
+  platform.macos_client:
+    status: supported
+  platform.linux_client:
+    status: unsupported
+  platform.android_app:
+    status: partial
+    notes:
+      - "In development."
+  platform.ios_app:
+    status: partial
+    notes:
+      - "In development."
+  platform.offline_message_caching:
+    status: unsupported
+  platform.progressive_web_app:
+    status: unsupported
+  platform.accessibility_screen_reader_support:
+    status: unsupported
+  platform.low_bandwidth_mode:
+    status: unsupported
+
+  # Community Features
+  community.public_server_discovery:
+    status: unsupported
+  community.server_categories:
+    status: supported
+  community.announcement_channels:
+    status: partial
+    notes:
+      - "Server Announcements feature, no announcement channel type."
+  community.forum_style_channels:
+    status: unsupported
+  community.community_analytics:
+    status: unsupported
+  community.server_insights_dashboard:
+    status: unsupported
+  community.membership_screening:
+    status: unsupported
+  community.paid_subscriptions_memberships:
+    status: unsupported
+  community.boosting_system:
+    status: partial
+    notes:
+      - "In development."
+  community.stage_broadcast_channels:
+    status: unsupported
+
+  # Voice / Video Specific
+  av.push_to_talk:
+    status: supported
+  av.noise_suppression_built_in:
+    status: unsupported
+  av.background_blur:
+    status: unsupported
+  av.voice_activity_detection:
+    status: supported
+  av.screen_share_with_audio:
+    status: partial
+    notes:
+      - "Currently only supported on limited platforms."
+  av.recording_capability:
+    status: unsupported
+  av.live_streaming_to_external_platforms:
+    status: unsupported
+  av.spatial_audio:
+    status: partial
+  av.max_call_size_gt_25:
+    status: supported
+  av.persistent_voice_rooms:
+    status: supported
+
+  # Customization & UX
+  ux.custom_themes:
+    status: partial
+    notes:
+      - "7 theme colors to choose from."
+  ux.dark_mode:
+    status: supported
+  ux.custom_css_support:
+    status: unsupported
+  ux.plugin_support:
+    status: partial
+    notes:
+      - "Official addons for supported games only."
+  ux.keyboard_shortcut_customization:
+    status: supported
+  ux.custom_notification_rules:
+    status: partial
+    notes:
+      - "Notification rules are service-wide, not community-specific."
+  ux.per_channel_notification_control:
+    status: partial
+    notes:
+      - "Only mute control."
+  ux.custom_status_messages:
+    status: unsupported
+  ux.rich_presence_api:
+    status: partial
+    notes:
+      - "Only support for World of Warcraft through integration."
+  ux.custom_avatars_per_community:
+    status: unsupported
+
+  # Monetization & Creator Tools
+  monet.partner_program:
+    status: unsupported
+  monet.native_paid_membership_subscriptions:
+    status: unsupported
+  monet.revenue_sharing_model:
+    status: unsupported
+  monet.paywalled_channels:
+    status: unsupported
+  monet.tipping_donations_built_in:
+    status: unsupported
+  monet.digital_goods_sales:
+    status: unsupported
+
+  # Business / Governance
+  biz.non_profit_governance:
+    status: no
+  biz.corporate_owned:
+    status: yes
+  biz.clear_monetization_model:
+    status: yes
+  biz.enterprise_sla:
+    status: unsupported
+  biz.priority_support_tier:
+    status: unsupported
+  biz.dedicated_hosting_option:
+    status: unsupported
+  biz.community_moderation_model:
+    status: unsupported
+  biz.transparent_roadmap:
+    status: unsupported
+  biz.public_issue_tracker:
+    status: unsupported
+  biz.venture_capital_funded:
+    status: no
